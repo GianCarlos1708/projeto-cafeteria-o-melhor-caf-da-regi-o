@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Dev club café</title>
+</head>
+
+<body>
+    <div class="caixa-video">
+        <video src="./assets/videos/coffe_video.mp4" loop muted autoplay></video>
+        <div class="mascara"></div>
+    </div>
+
+    <header class="header">
+        <section>
+            <a href="#">
+                <img src="./assets/imagens/logo.png" alt="Cafeteria logo ">
+            </a>
+
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            <nav id="menu-nav">
+   <a href="#home">home</a>
+    <a href="#sobre">sobre</a>
+    <a href="#cardapio">cardápio</a>
+    <a href="#contato">contato</a>
+    <a href="#" onclick="mostrarModal()">endereço</a>
+</nav>
+        </section>
+    </header>
+
+    <section class="caixa-principal" id="home">
+        <div>
+            <h3>o melhor café da região!</h3>
+            <p>Aqui, cada detalhe é pensado para transformar sua pausa em um momento especial. Do aroma inconfundível do café recém-passado ao atendimento caloroso, nossa missão é oferecer mais do que uma bebida: queremos proporcionar uma experiência acolhedora, saborosa e inesquecível. Seja para começar bem o dia, recarregar as energias à tarde ou simplesmente apreciar um bom café com amigos, este é o seu lugar. Sinta-se em casa — o café perfeito está te esperando!</p>
+            <a class="botão-link"> Peça o seu agora</a>
+        </div>
+    </section>
+
+    <section class="caixa-sobre" id="sobre">
+        <h2 class="titulo"> <span>sobre</span> nós</h2>
+        <div class="sobre-container">
+            <div class="sobre-imagem">
+                <img src="./assets/imagens/about-img.jpg" alt="Cafeteria">
+            </div>
+
+            <div class="sobre-texto">
+                <h3>o que faz nosso café especial</h3>
+                <p>Nosso café é especial porque colocamos paixão em cada etapa: da escolha dos grãos à forma como recebemos você. Trabalhamos com cafés selecionados de alta qualidade, apoiamos produtores locais e prezamos pelo preparo artesanal.
+                Mais do que servir café, criamos um espaço acolhedor para você viver bons momentos e saborear o melhor da região.</p>
+                <a class="botão-link">Saiba Mais</a>
+            </div>
+        </div>
+    </section>
+    <section class="caixa-cardapio" id="cardapio">
+        <h2 class="titulo">nosso <span>cardápio</span></h2>
+        <div class="cardapio-container">
+            <div class="cardapio-item">
+                <img src="./assets/imagens/expreso.png" alt="Café Espresso">
+                <h3>Café Espresso Tradicional</h3>
+                <div class="preco">R$ 4,00</div>
+                <p>O clássico italiano, forte e aromático, para os amantes de um café puro e intenso.</p>
+                <a href="#" class="botão-link">Adicionar</a>
+            </div>
+
+            <div class="cardapio-item">
+                <img src="./assets/imagens/capucino.png" alt="Cappuccino Cremoso">
+                <h3>Cappuccino Cremoso</h3>
+                <div class="preco">R$ 9,00</div>
+                <p>Combinação perfeita de espresso, leite vaporizado e uma generosa camada de espuma de leite.</p>
+                <a href="#" class="botão-link">Adicionar</a>
+            </div>
+
+            <div class="cardapio-item">
+                <img src="./assets/imagens/leite machiato.jpg" alt="Latte Macchiato">
+                <h3>Latte Macchiato</h3>
+                <div class="preco">R$ 10,00</div>
+                <p>Deliciosa bebida em camadas: leite quente, espresso e uma rica espuma, ideal para quem ama suavidade.</p>
+                <a href="#" class="botão-link">Adicionar</a>
+            </div>
+
+            <div class="cardapio-item">
+                <img src="./assets/imagens/café mocha.jpg" alt="Mocha de Chocolate">
+                <h3>Mocha de Chocolate</h3>
+                <div class="preco">R$ 8,00</div>
+                <p>A união perfeita do café com o chocolate, uma indulgência para o seu paladar.</p>
+                <a href="#" class="botão-link">Adicionar</a>
+            </div>
+
+            <div class="cardapio-item">
+                <img src="./assets/imagens/frappuccino.jpg" alt="Frappuccino de Caramelo">
+                <h3>Frappuccino de Caramelo</h3>
+                <div class="preco">R$ 9,00</div>
+                <p>Refrescante e doce, com café, gelo, leite e calda de caramelo, finalizado com chantilly.</p>
+                <a href="#" class="botão-link">Adicionar</a>
+            </div>
+
+            <div class="cardapio-item">
+                <img src="./assets/imagens/pão de queijo gourmet.jpg" alt="Pão de Queijo Gourmet">
+                <h3>Pão de Queijo Gourmet</h3>
+                <div class="preco">R$ 4,50</div>
+                <p>Tradicional pão de queijo mineiro, crocante por fora e macio por dentro.</p>
+                <a href="#" class="botão-link">Adicionar</a>
+            </div>
+        </div>
+        <section class="caixa-contato" id="contato">
+        <h2 class="titulo">fale <span>conosco</span></h2>
+        <div class="contato-container">
+            <div class="contato-mapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15250.771694273292!2d-45.40578835!3d-21.8496181!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cb831518f95c55%3A0x6a21e4b8b6a3b2b!2sCampanha%2C%20MG%2C%2037760-000!5e0!3m2!1spt-BR!2sbr!4v1721894400000!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <form action="" class="contato-formulario">
+                <h3>Entre em contato!</h3>
+                <div class="input-caixa">
+                    <input type="text" placeholder="Nome Completo">
+                </div>
+                <div class="input-caixa">
+                    <input type="email" placeholder="Seu Email">
+                </div>
+                <div class="input-caixa">
+                    <input type="number" placeholder="Seu Telefone">
+                </div>
+                <input type="submit" value="Enviar Mensagem" class="botão-link">
+            </form>
+        </div>
+    </section>
+     
+    <div class="modal">
+        <h3 class="titulo"><span>Nosso</span> endereço</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3744.159670081393!2d-45.40578802506456!3d-20.19897818129758!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b4625b5d3c0e59%3A0x7e7d9b7c8f9b7c8d!2sSua%20Cafeteria%20Exemplo!5e0!3m2!1spt-BR!2sbr!4v1678899889999!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <div class="mascara-modal" onclick="esconderModal()"></div>
+
+    <script src="./assets/script.js"></script>
+
+</body>
+</html>
